@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background:black;
+  }
+#para1{
+color :whitesmoke;
+ position: fixed; 
+ height: 100%;
+ width: 100%;
+top:0%;
+font-family: 'Lato', sans-serif;
+ 
+font-size: 100px;
+text-align: center;
+
+}
+#para2{
+    color :whitesmoke;
+     position: fixed; 
+    top:50%;
+    margin-left: 75px;
+    margin-right: 75px;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    }
+
+
+#content{
+    background-color: whitesmoke;
+    position:fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    height: 469px;
+    opacity: 0;
+border-style: groove;
+}
+#main{
+    position: fixed;
+    /* background-color: whitesmoke; */
+    /* background-color: rgba(24, 27, 229, 0.75); */
+
+    top: 510px;
+    left: 44%;
+    border-radius: 5px;
+    block-size: 69px;
+    font-size: 20px ;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 45px; 
+    border-block-start-color:white;
+    border-color: azure;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+/* #feedback{
+    position: fixed;
+background-color: rgb(97, 159, 210);
+    top: 350px;
+    left: 55%;
+    border-radius: 20px;
+    block-size: 69px;
+    font-size: 29px ;
+    color:whitesmoke;
+} */
+

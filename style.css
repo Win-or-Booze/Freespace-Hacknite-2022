@@ -1,0 +1,135 @@
+*{                                           /*Universal selector, applies to all things */
+    margin: 0;
+    padding: 0;
+    /* background-color: #000; */
+}
+
+/* CLASS NAV is for the NAVIGATION BAR */
+
+.nav{
+    background-color: #C0C0C0;
+    width: 1369px;
+    height: 50px;
+    position: fixed;				/* Positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);              /* Moves from current position - NOT SURE EXACTLY WHAT IT DOES */
+    display: flex;				/* NOT SURE EXACTLY WHAT IT DOES- Maybe makes sizes flexible/ equal */
+    align-items: center;                      /* Aligns the flexible container's items when the items do not use all available space on the main-axis. Related to above line*/
+    justify-content: space-around;            /* SOME DIFFERENCE BETWEEN 2- BIT CONFUSED- HORIZONTAL VS CROSSES */
+    opacity: .7;                               
+    transition: opacity 0.5s;                 /* Opacity property changes after 0.5 s */
+}
+.nav:hover{
+    opacity: 1;                              
+}
+
+.clr{
+    height: 30px;    
+    width: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid rgb(214, 214, 214);                                       
+    transition: transform .5s;
+}
+.clr:hover{
+    transform: scale(1.2);                   /* To make it bigger in size by 20% on hovering with same delay like opacity  */
+}
+.clr:nth-child(1){
+    background-color: #000;
+}
+.clr:nth-child(2){
+    background-color: #EF626C;
+}
+.clr:nth-child(3){                           
+    background-color: #fdec03;
+}
+.clr:nth-child(4){
+    background-color: #24d102;
+}
+.clr:nth-child(5){
+    background-color:blue;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: .6em 1em;
+    border-radius: 3px;
+    background-color: #03bb56;               /* Button with default color green and save button changed to blue*/
+    color: #fff;
+}
+.save{
+    background-color:  #0f65d4;
+}
+
+.print{
+   background-color: #FF4500;
+}
+
+.pencil{
+ background-color: #696969;
+}
+.circle{
+ background-color: #696969;
+}
+.square{
+    background-color: #696969;
+   }
+
+   .tri{
+    background-color: #696969;
+   }
+   
+   .line{
+    background-color: #696969;
+   } 
+   .eraser{
+    background-color: #696969;
+   } 
+   #fill{
+       background-color: red;
+   }
+  
+  
+  
+ 
+
+  /** Switch
+ -------------------------------------*/
+
+.switch input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  /**
+   * 1. Adjust this to size
+   */
+  
+  .switch {
+    display: inline-block;
+    font-size: 20px; /* 1 */
+    height: 1em;
+    width: 2em;
+    background: #50aae1;
+    border-radius: 1em;
+  }
+  
+  .switch div {
+    height: 1em;
+    width: 1em;
+    border-radius: 1em;
+    background: #FFF;
+    box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+    -webkit-transition: all 300ms;
+       -moz-transition: all 300ms;
+            transition: all 300ms;
+  }
+  
+  .switch input:checked + div {
+    -webkit-transform: translate3d(100%, 0, 0);
+       -moz-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  
